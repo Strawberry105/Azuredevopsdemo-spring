@@ -58,7 +58,7 @@ stages:
             rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
             includeRootFolder: true
             archiveType: 'zip'
-            archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+            archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).jar'
             replaceExistingArchive: true
         - task: CopyFiles@2
           inputs:
